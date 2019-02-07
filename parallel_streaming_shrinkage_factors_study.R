@@ -23,7 +23,7 @@ ncores		<- 3#detectCores() / 2 #or the number i can use
 
 do.sim	<- function(pos, conditions = conditionsSim, path = path)
 {
-  source("sim-fun_McK.R")
+  source("sim-fun.R")
   morris_variance <- read.table("morris_variance.txt")
   brown_variance <- read.table("brown_variance.txt")
   #this selects the right variance for oracle shrinkage factors 
